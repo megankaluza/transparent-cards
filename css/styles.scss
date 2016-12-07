@@ -1,5 +1,5 @@
 body {
-  background-image: url('../img/hair.png');
+  background-image: url('#{$path-img}/hair.png');
 }
 
 button {
@@ -13,18 +13,18 @@ button {
   }
 }
 
-img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-}
+// img {
+//   width: auto;
+//   max-width: 100%;
+//   height: auto;
+// }
 
 h2 {
   font-size: 1em;
 }
 
 div {
-  background-color: $discoball;
+  // background-color: $discoball;
   // opacity: 0.5;
   top: 0;
   left: 0;
@@ -42,7 +42,7 @@ div {
 
 .cardOne::after {
   content: "";
-  background-image: url('../img/pink.jpg');
+  background-image: url('#{$path-img}/pink.jpg');
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -61,7 +61,7 @@ div {
 
 .cardTwo::after {
   content: "";
-  background-image: url('../img/lips.jpg');
+  background-image: url('#{$path-img}/lips.jpg');
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -80,7 +80,7 @@ div {
 
 .cardThree::after {
   content: "";
-  background-image: url('../img/skin.jpg');
+  background-image: url('#{$path-img}/skin.jpg');
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -99,7 +99,7 @@ div {
 
 .cardFour::after {
   content: "";
-  background-image: url('../img/face.jpg');
+  background-image: url('#{$path-img}/face.jpg');
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -110,6 +110,7 @@ div {
 }
 
 .text {
+  background-color: $discoball;
   position: relative;
   top: 20px;
   width: 300px;
@@ -137,10 +138,29 @@ div {
   min-height: 100px;
 }
 
-@media only screen and (min-width: 30em) {
-.column-3 {
-    width: 25%;
-  }
+@media only screen and (max-width: 1405px) {
+  // .wrapper {
+  //   .column-3 { @include span-columns(2);
+  //     width: 25%;
+  //    }
+  //   }
+  //
+  // .column-3 {
+  //     width: 25%;
+  //   }
+
+}
+
+@media only screen and (min-width: 480px) {
+  .wrapper {
+    width: 100%;
+    max-width: 90em;
+    }
+
+  .column-3 {
+      width: 25%;
+    }
+
 }
 
 @media only screen and (max-width: 490px) {

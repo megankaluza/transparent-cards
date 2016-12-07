@@ -1,35 +1,30 @@
 /*
-Error: Undefined variable: "$hotpink".
-        on line 12 of ./css/styles.scss
+Error: Undefined variable: "$path-img".
+        on line 2 of ./css/styles.scss
 
+1: body {
+2:   background-image: url('#{$path-img}/hair.png');
+3: }
+4: 
+5: button {
+6:   position: absolute;
 7:   top: 400px;
-8:   padding: 1em;
-9:   background: none;
-10:   border: 1px solid black;
-11:   &:hover {
-12:     background: $hotpink;
-13:   }
-14: }
-15: 
-16: img {
-17:   width: auto;
 
 Backtrace:
-./css/styles.scss:12
+./css/styles.scss:2
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/string_interpolation.rb:93:in `_perform'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/funcall.rb:173:in `perform_arg'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/funcall.rb:124:in `block in _perform'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/funcall.rb:124:in `each'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/funcall.rb:124:in `each_with_index'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/funcall.rb:124:in `each'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/funcall.rb:124:in `map'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/funcall.rb:124:in `_perform'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
@@ -77,4 +72,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$hotpink\".\A         on line 12 of ./css/styles.scss\A \A 7:   top: 400px;\A 8:   padding: 1em;\A 9:   background: none;\A 10:   border: 1px solid black;\A 11:   &:hover {\A 12:     background: $hotpink;\A 13:   }\A 14: }\A 15: \A 16: img {\A 17:   width: auto;"; }
+  content: "Error: Undefined variable: \"$path-img\".\A         on line 2 of ./css/styles.scss\A \A 1: body {\A 2:   background-image: url('#{$path-img}/hair.png');\A 3: }\A 4: \A 5: button {\A 6:   position: absolute;\A 7:   top: 400px;"; }

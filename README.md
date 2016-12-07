@@ -48,7 +48,6 @@ _No known bugs at this time_
 * _HTML_
 * _CSS_
 * _SASS_
-* _Bootstrap_
 
 ### License
 

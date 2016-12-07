@@ -33,16 +33,10 @@ button {
   button:hover {
     background: #ED6879; }
 
-img {
-  width: auto;
-  max-width: 100%;
-  height: auto; }
-
 h2 {
   font-size: 1em; }
 
 div {
-  background-color: #2DC7FF;
   top: 0;
   left: 0;
   bottom: 0;
@@ -118,6 +112,7 @@ div {
   z-index: -1; }
 
 .text {
+  background-color: #2DC7FF;
   position: relative;
   top: 20px;
   width: 300px;
@@ -142,7 +137,11 @@ div {
   width: 100%;
   min-height: 100px; }
 
-@media only screen and (min-width: 30em) {
+@media only screen and (min-width: 480px) {
+  .wrapper {
+    width: 100%;
+    max-width: 90em; }
+
   .column-3 {
     width: 25%; } }
 @media only screen and (max-width: 490px) {
