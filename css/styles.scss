@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Molle:400i');
+
 body {
   background-image: url('#{$path-img}/hair.png');
 }
@@ -22,6 +24,7 @@ img {
 }
 
 h2 {
+  font-family: $stack-molle;
   font-size: 1em;
   text-align: center;
 }
@@ -36,7 +39,14 @@ div {
   z-index: 0;
 }
 
+footer {
+  text-align: center;
+  margin-top: 20em;
+  font-family: $stack-molle;
+}
+
 .cardOne {
+  background: blue;
   width: auto;
   height: 500px;
   display: block;
@@ -56,6 +66,7 @@ div {
 }
 
 .cardTwo {
+  background: green;
   width: auto;
   height: 500px;
   display: block;
@@ -75,6 +86,7 @@ div {
 }
 
 .cardThree {
+  background: pink;
   width: auto;
   height: 500px;
   display: block;
@@ -94,6 +106,7 @@ div {
 }
 
 .cardFour {
+  background: purple;
   width: auto;
   height: 500px;
   display: block;
@@ -164,5 +177,9 @@ div {
 
   .row {
     margin-top: 0;
+  }
+
+  footer {
+    margin: 0;
   }
 }
