@@ -1,0 +1,5 @@
+// @include
+
+@function hue($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}

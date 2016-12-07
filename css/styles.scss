@@ -4,27 +4,30 @@ body {
 
 button {
   position: absolute;
-  top: 400px;
-  padding: 1em;
+  top: 430px;
+  left: 240px;
+  padding: 1.5em;
   background: none;
   border: 1px solid black;
   &:hover {
     background: $hotpink;
+    opacity: .5;
   }
 }
 
-// img {
-//   width: auto;
-//   max-width: 100%;
-//   height: auto;
-// }
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
 
 h2 {
   font-size: 1em;
+  text-align: center;
 }
 
 div {
-  // background-color: $discoball;
+  // background-color: white;
   // opacity: 0.5;
   top: 0;
   left: 0;
@@ -110,11 +113,11 @@ div {
 }
 
 .text {
-  background-color: $discoball;
+  background-color: hue($discoball, 60%);
   position: relative;
   top: 20px;
-  width: 300px;
-  padding: 2em;
+  width: 100px;
+  padding: 1em;
   border-radius: 90%;
 }
 
@@ -133,21 +136,12 @@ div {
 
 [class*='column-'] {
   float: left;
-  padding: 2em;
+  padding: 3em;
   width: 100%;
   min-height: 100px;
 }
 
 @media only screen and (max-width: 1405px) {
-  // .wrapper {
-  //   .column-3 { @include span-columns(2);
-  //     width: 25%;
-  //    }
-  //   }
-  //
-  // .column-3 {
-  //     width: 25%;
-  //   }
 
 }
 

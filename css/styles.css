@@ -8,7 +8,7 @@ Error: Undefined variable: "$path-img".
 4: 
 5: button {
 6:   position: absolute;
-7:   top: 400px;
+7:   top: 430px;
 
 Backtrace:
 ./css/styles.scss:2
@@ -72,4 +72,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$path-img\".\A         on line 2 of ./css/styles.scss\A \A 1: body {\A 2:   background-image: url('#{$path-img}/hair.png');\A 3: }\A 4: \A 5: button {\A 6:   position: absolute;\A 7:   top: 400px;"; }
+  content: "Error: Undefined variable: \"$path-img\".\A         on line 2 of ./css/styles.scss\A \A 1: body {\A 2:   background-image: url('#{$path-img}/hair.png');\A 3: }\A 4: \A 5: button {\A 6:   position: absolute;\A 7:   top: 430px;"; }

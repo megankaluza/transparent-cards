@@ -26,15 +26,23 @@ body {
 
 button {
   position: absolute;
-  top: 400px;
-  padding: 1em;
+  top: 430px;
+  left: 240px;
+  padding: 1.5em;
   background: none;
   border: 1px solid black; }
   button:hover {
-    background: #ED6879; }
+    background: #ED6879;
+    opacity: .5; }
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto; }
 
 h2 {
-  font-size: 1em; }
+  font-size: 1em;
+  text-align: center; }
 
 div {
   top: 0;
@@ -112,11 +120,11 @@ div {
   z-index: -1; }
 
 .text {
-  background-color: #2DC7FF;
+  background-color: #abe9ff;
   position: relative;
   top: 20px;
-  width: 300px;
-  padding: 2em;
+  width: 100px;
+  padding: 1em;
   border-radius: 90%; }
 
 .row {
@@ -133,7 +141,7 @@ div {
 
 [class*='column-'] {
   float: left;
-  padding: 2em;
+  padding: 3em;
   width: 100%;
   min-height: 100px; }
 
