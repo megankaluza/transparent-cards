@@ -1,0 +1,12 @@
+button {
+  position: absolute;
+  top: 520px;
+  left: 240px;
+  padding: 1.5em;
+  background: none;
+  border: 1px solid black;
+  &:hover {
+    @extend %opacity;
+    background: white;
+  }
+}

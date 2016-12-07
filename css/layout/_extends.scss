@@ -1,11 +1,38 @@
-%clearfix {
-    *zoom: 1;
-    &:before,
-    &:after {
-        content: " ";
-        display: table;
-    }
-    &:after {
-        clear: both;
-    }
+// Center Text
+%centered {
+  text-align: center;
+}
+
+// Columns
+%columns {
+  width: auto;
+  height: 600px;
+  display: block;
+  position: relative;
+}
+
+// After Effect
+%after {
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+// Positioning
+%position {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+// Opacity
+%opacity {
+  opacity: .5;
 }

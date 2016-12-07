@@ -10,41 +10,24 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.wrapper,
-.row {
-  *zoom: 1; }
-  .wrapper:before,
-  .row:before, .wrapper:after,
-  .row:after {
-    content: " ";
-    display: table; }
-  .wrapper:after,
-  .row:after {
-    clear: both; }
-
-body {
-  background-image: url("../img/hair.png"); }
-
-button {
-  position: absolute;
-  top: 430px;
-  left: 240px;
-  padding: 1.5em;
-  background: none;
-  border: 1px solid black; }
-  button:hover {
-    background: #ED6879;
-    opacity: .5; }
-
-img {
-  width: auto;
-  max-width: 100%;
-  height: auto; }
-
-h2 {
-  font-family: "Molle", cursive;
-  font-size: 1em;
+footer, h1, h2 {
   text-align: center; }
+
+.cardOne, .cardTwo, .cardThree, .cardFour {
+  width: auto;
+  height: 600px;
+  display: block;
+  position: relative; }
+
+.cardOne::after, .cardTwo::after, .cardThree::after, .cardFour::after {
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
 
 div {
   top: 0;
@@ -53,93 +36,78 @@ div {
   right: 0;
   z-index: 0; }
 
+button:hover, .text:hover {
+  opacity: .5; }
+
 footer {
-  text-align: center;
   margin-top: 20em;
   font-family: "Molle", cursive; }
 
-.cardOne {
-  background: blue;
-  width: auto;
-  height: 500px;
-  display: block;
-  position: relative; }
+header {
+  background-color: #84DCC6;
+  opacity: .5; }
 
-.cardOne::after {
-  content: "";
-  background-image: url("../img/pink.jpg");
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+button {
   position: absolute;
-  z-index: -1; }
+  top: 520px;
+  left: 240px;
+  padding: 1.5em;
+  background: none;
+  border: 1px solid black; }
+  button:hover {
+    background: white; }
+
+body {
+  background-image: url("../img/hair.png"); }
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto; }
+
+h1 {
+  font-family: "Molle", cursive; }
+
+h2 {
+  font-family: "Molle", cursive;
+  font-size: 1em; }
+
+.cardOne {
+  background: blue; }
+  .cardOne::after {
+    background-image: url("../img/pink.jpg"); }
 
 .cardTwo {
-  background: green;
-  width: auto;
-  height: 500px;
-  display: block;
-  position: relative; }
-
-.cardTwo::after {
-  content: "";
-  background-image: url("../img/lips.jpg");
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; }
+  background: green; }
+  .cardTwo::after {
+    background-image: url("../img/lips.jpg"); }
 
 .cardThree {
-  background: pink;
-  width: auto;
-  height: 500px;
-  display: block;
-  position: relative; }
-
-.cardThree::after {
-  content: "";
-  background-image: url("../img/skin.jpg");
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; }
+  background: #ED6879; }
+  .cardThree::after {
+    background-image: url("../img/skin.jpg"); }
 
 .cardFour {
-  background: purple;
-  width: auto;
-  height: 500px;
-  display: block;
-  position: relative; }
+  background: purple; }
+  .cardFour::after {
+    background-image: url("../img/face.jpg"); }
 
-.cardFour::after {
-  content: "";
-  background-image: url("../img/face.jpg");
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; }
+.column {
+  float: left;
+  padding: 3em;
+  width: 100%;
+  min-height: 100px; }
 
 .text {
   background-color: #abe9ff;
   position: relative;
-  top: 20px;
-  width: 100px;
-  padding: 1em;
+  top: 5px;
+  width: 150px;
+  padding: 1.5em;
   border-radius: 90%; }
 
 .row {
-  margin-top: 20em; }
+  margin-top: 15em; }
 
 .wrapper {
   max-width: 85%;
@@ -150,18 +118,18 @@ footer {
     content: "";
     display: table; }
 
-[class*='column-'] {
-  float: left;
-  padding: 3em;
-  width: 100%;
-  min-height: 100px; }
+.wrapper::after,
+.row::after {
+  clear: both;
+  content: "";
+  display: table; }
 
 @media only screen and (min-width: 480px) {
   .wrapper {
     width: 100%;
     max-width: 90em; }
 
-  .column-3 {
+  .column {
     width: 25%; } }
 @media only screen and (max-width: 490px) {
   .wrapper {
