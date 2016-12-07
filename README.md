@@ -28,6 +28,7 @@ _Objectives:_
 
 ## Setup/Installation Requirements
 
+* _Check out the GitHub Pages: https://megankaluza.github.io/transparent-cards_
 * _Clone this repository https://github.com/megankaluza/https://github.com/megankaluza/transparent-cards.git_
 * _gem install sass_
 * _gem install bourbon_
