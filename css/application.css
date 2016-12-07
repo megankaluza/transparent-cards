@@ -18,22 +18,38 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
   background-image: url("../img/hair.png"); }
 
+button {
+  position: absolute;
+  top: 400px;
+  padding: 1em;
+  background: none;
+  border: 1px solid black; }
+  button:hover {
+    background: #ED6879; }
+
 img {
   width: auto;
   max-width: 100%;
   height: auto; }
 
+h2 {
+  font-size: 1em; }
+
 div {
   background-color: #2DC7FF;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   z-index: 0; }
 
-.card {
+.cardOne {
   width: auto;
   height: 500px;
   display: block;
   position: relative; }
 
-.card::after {
+.cardOne::after {
   content: "";
   background-image: url("../img/pink.jpg");
   opacity: 0.5;
@@ -44,11 +60,66 @@ div {
   position: absolute;
   z-index: -1; }
 
+.cardTwo {
+  width: auto;
+  height: 500px;
+  display: block;
+  position: relative; }
+
+.cardTwo::after {
+  content: "";
+  background-image: url("../img/lips.jpg");
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.cardThree {
+  width: auto;
+  height: 500px;
+  display: block;
+  position: relative; }
+
+.cardThree::after {
+  content: "";
+  background-image: url("../img/skin.jpg");
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.cardFour {
+  width: auto;
+  height: 500px;
+  display: block;
+  position: relative; }
+
+.cardFour::after {
+  content: "";
+  background-image: url("../img/face.jpg");
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
 .text {
   position: relative;
-  top: 30px;
-  width: 200px;
-  padding: 1em; }
+  top: 20px;
+  width: 300px;
+  padding: 2em;
+  border-radius: 90%; }
+
+.row {
+  margin-top: 4em; }
 
 .wrapper {
   width: 100%;

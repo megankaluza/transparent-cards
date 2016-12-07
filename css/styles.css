@@ -1,24 +1,35 @@
 /*
-Error: Undefined variable: "$discoball".
-        on line 18 of ./css/styles.scss
+Error: Undefined variable: "$hotpink".
+        on line 12 of ./css/styles.scss
 
-13: //   width: 100%;
-14: //   height: 100%;
-15: // }
-16: 
-17: div {
-18:   background-color: $discoball;
-19:   // opacity: 0.5;
-20:   // top: 0;
-21:   // left: 0;
-22:   // bottom: 0;
-23:   // right: 0;
+7:   top: 400px;
+8:   padding: 1em;
+9:   background: none;
+10:   border: 1px solid black;
+11:   &:hover {
+12:     background: $hotpink;
+13:   }
+14: }
+15: 
+16: img {
+17:   width: auto;
 
 Backtrace:
-./css/styles.scss:18
+./css/styles.scss:12
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
@@ -66,4 +77,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$discoball\".\A         on line 18 of ./css/styles.scss\A \A 13: //   width: 100%;\A 14: //   height: 100%;\A 15: // }\A 16: \A 17: div {\A 18:   background-color: $discoball;\A 19:   // opacity: 0.5;\A 20:   // top: 0;\A 21:   // left: 0;\A 22:   // bottom: 0;\A 23:   // right: 0;"; }
+  content: "Error: Undefined variable: \"$hotpink\".\A         on line 12 of ./css/styles.scss\A \A 7:   top: 400px;\A 8:   padding: 1em;\A 9:   background: none;\A 10:   border: 1px solid black;\A 11:   &:hover {\A 12:     background: $hotpink;\A 13:   }\A 14: }\A 15: \A 16: img {\A 17:   width: auto;"; }
