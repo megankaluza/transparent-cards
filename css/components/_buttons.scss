@@ -9,6 +9,6 @@ button {
   border: 1px solid black;
   &:hover {
     @extend %opacity;
-    background: white;
+    background: $white;
   }
 }

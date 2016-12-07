@@ -4,10 +4,8 @@ body {
   background-image: url('#{$path-img}/hair.png');
 }
 
-img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
+div {
+  @extend %position;
 }
 
 h1 {
@@ -21,8 +19,10 @@ h2 {
   font-size: 1em;
 }
 
-div {
-  @extend %position;
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 p {
@@ -33,7 +33,7 @@ p {
 
 .cardOne {
   @extend %columns;
-  background: blue;
+  background: $blue;
   &::after {
     @extend %after;
     background-image: url('#{$path-img}/pink.jpg');
@@ -42,7 +42,7 @@ p {
 
 .cardTwo {
   @extend %columns;
-  background: green;
+  background: $green;
   &::after {
     @extend %after;
     background-image: url('#{$path-img}/lips.jpg');
@@ -60,7 +60,7 @@ p {
 
 .cardFour {
   @extend %columns;
-  background: purple;
+  background: $purple;
   &::after {
     @extend %after;
     background-image: url('#{$path-img}/face.jpg');

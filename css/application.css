@@ -57,15 +57,10 @@ button {
   background: none;
   border: 1px solid black; }
   button:hover {
-    background: white; }
+    background: #FFFFFF; }
 
 body {
   background-image: url("../img/hair.png"); }
-
-img {
-  width: auto;
-  max-width: 100%;
-  height: auto; }
 
 h1 {
   font-family: "Molle", cursive; }
@@ -73,6 +68,11 @@ h1 {
 h2 {
   font-family: "Molle", cursive;
   font-size: 1em; }
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto; }
 
 p {
   font-family: "Unica One", cursive;
