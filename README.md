@@ -31,9 +31,7 @@ _Objectives:_
 * _Clone this repository https://github.com/megankaluza/https://github.com/megankaluza/transparent-cards.git_
 * _gem install sass_
 * _gem install bourbon_
-* _bourbon install_
 * _gem install neat_
-* _neat install_
 * _sass --watch ._
 * _Open in browser of your choice_
 

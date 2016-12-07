@@ -1,4 +1,35 @@
-@import "_reset.scss";
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
 
-@import "libraries/neat/neat";
-@import "libraries/bourbon/bourbon";
+div {
+  margin: 1em auto;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper:after,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='column-'] {
+  background-color: $discoball;
+  float: left;
+  padding: 5em;
+  width: 100%;
+  min-height: 1px;
+}
+
+@media only screen and (min-width: 30em) {
+  .column-3 {
+     width: 25%;
+     }
+}
