@@ -3,30 +3,51 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0;
   box-sizing: border-box; }
 
-img {
-  width: auto;
-  max-width: 100%;
-  height: auto; }
+.wrapper,
+.row {
+  *zoom: 1; }
+  .wrapper:before,
+  .row:before, .wrapper:after,
+  .row:after {
+    content: " ";
+    display: table; }
+  .wrapper:after,
+  .row:after {
+    clear: both; }
+
+body {
+  background-image: url("../img/hair.png"); }
 
 div {
-  margin: 1em auto; }
+  background-color: #2DC7FF;
+  z-index: 0; }
+
+.card {
+  width: auto;
+  height: 500px;
+  display: block;
+  position: relative; }
+
+.card::after {
+  content: "";
+  background-image: url("../img/pink.jpg");
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
 
 .wrapper {
   width: 100%;
   margin: 0 auto; }
 
-.wrapper:after,
-.row:after {
-  content: "";
-  display: table;
-  clear: both; }
-
 [class*='column-'] {
-  background-color: #2DC7FF;
   float: left;
   padding: 5em;
   width: 100%;
-  min-height: 1px; }
+  min-height: 100px; }
 
 @media only screen and (min-width: 30em) {
   .column-3 {

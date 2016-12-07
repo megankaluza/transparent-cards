@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$discoball".
-        on line 24 of ./css/styles.scss
+        on line 19 of ./css/styles.scss
 
-19:   display: table;
-20:   clear: both;
-21: }
-22: 
-23: [class*='column-'] {
-24:   background-color: $discoball;
-25:   float: left;
-26:   padding: 5em;
-27:   width: 100%;
-28:   min-height: 1px;
-29: }
+14: //   width: 100%;
+15: //   height: 100%;
+16: // }
+17: 
+18: div {
+19:   background-color: $discoball;
+20:   // opacity: 0.5;
+21:   // top: 0;
+22:   // left: 0;
+23:   // bottom: 0;
+24:   // right: 0;
 
 Backtrace:
-./css/styles.scss:24
+./css/styles.scss:19
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -68,4 +68,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$discoball\".\A         on line 24 of ./css/styles.scss\A \A 19:   display: table;\A 20:   clear: both;\A 21: }\A 22: \A 23: [class*='column-'] {\A 24:   background-color: $discoball;\A 25:   float: left;\A 26:   padding: 5em;\A 27:   width: 100%;\A 28:   min-height: 1px;\A 29: }"; }
+  content: "Error: Undefined variable: \"$discoball\".\A         on line 19 of ./css/styles.scss\A \A 14: //   width: 100%;\A 15: //   height: 100%;\A 16: // }\A 17: \A 18: div {\A 19:   background-color: $discoball;\A 20:   // opacity: 0.5;\A 21:   // top: 0;\A 22:   // left: 0;\A 23:   // bottom: 0;\A 24:   // right: 0;"; }
