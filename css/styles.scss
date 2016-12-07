@@ -30,7 +30,6 @@ div {
   left: 0;
   bottom: 0;
   right: 0;
-  // position: absolute;
   z-index: 0;
 }
 
@@ -123,8 +122,9 @@ div {
 }
 
 .wrapper {
-  width: 100%;
-  margin: 0 auto;
+  // width: 100%;
+  // margin: 0 auto;
+  @include outer-container(90%);
 }
 
 .wrapper,

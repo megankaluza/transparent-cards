@@ -1,11 +1,11 @@
 // Reset
 @import "reset";
 
-// @import "styles";
-@import 'base/index';
-@import 'layout/index';
-@import "styles";
-
  // Mixins Library
  @import "libraries/neat/neat";
  @import "libraries/bourbon/bourbon";
+
+ // @import "styles";
+ @import 'base/index';
+ @import 'layout/index';
+ @import "styles";

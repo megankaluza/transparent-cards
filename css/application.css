@@ -3,6 +3,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 .wrapper,
 .row {
   *zoom: 1; }
@@ -122,8 +128,13 @@ div {
   margin-top: 4em; }
 
 .wrapper {
-  width: 100%;
-  margin: 0 auto; }
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 [class*='column-'] {
   float: left;
@@ -134,10 +145,5 @@ div {
 @media only screen and (min-width: 30em) {
   .column-3 {
     width: 25%; } }
-html {
-  box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit; }
 
 /*# sourceMappingURL=application.css.map */
