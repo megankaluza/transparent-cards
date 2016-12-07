@@ -125,10 +125,10 @@ div {
   border-radius: 90%; }
 
 .row {
-  margin-top: 4em; }
+  margin-top: 20em; }
 
 .wrapper {
-  max-width: 90%;
+  max-width: 85%;
   margin-left: auto;
   margin-right: auto; }
   .wrapper::after {
@@ -145,5 +145,17 @@ div {
 @media only screen and (min-width: 30em) {
   .column-3 {
     width: 25%; } }
+@media only screen and (max-width: 490px) {
+  .wrapper {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    .wrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+
+  .row {
+    margin-top: 0; } }
 
 /*# sourceMappingURL=application.css.map */

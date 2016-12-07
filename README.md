@@ -1,6 +1,6 @@
 # _Transparent Cards_
 
-#### _Epicodus: Solo Project 12-07=16_
+#### _Epicodus: Solo Project 12-07-16_
 
 #### By _**Megan Kaluza**_
 

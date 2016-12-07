@@ -118,13 +118,11 @@ div {
 }
 
 .row {
-  margin-top: 4em;
+  margin-top: 20em;
 }
 
 .wrapper {
-  // width: 100%;
-  // margin: 0 auto;
-  @include outer-container(90%);
+  @include outer-container(85%);
 }
 
 .wrapper,
@@ -140,7 +138,17 @@ div {
 }
 
 @media only screen and (min-width: 30em) {
-  .column-3 {
-     width: 25%;
-     }
+.column-3 {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .wrapper {
+    @include outer-container(100%);
+  }
+
+  .row {
+    margin-top: 0;
+  }
 }
