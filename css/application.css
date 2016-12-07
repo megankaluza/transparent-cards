@@ -18,6 +18,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
   background-image: url("../img/hair.png"); }
 
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto; }
+
 div {
   background-color: #2DC7FF;
   z-index: 0; }
@@ -39,13 +44,19 @@ div {
   position: absolute;
   z-index: -1; }
 
+.text {
+  position: relative;
+  top: 30px;
+  width: 200px;
+  padding: 1em; }
+
 .wrapper {
   width: 100%;
   margin: 0 auto; }
 
 [class*='column-'] {
   float: left;
-  padding: 5em;
+  padding: 2em;
   width: 100%;
   min-height: 100px; }
 
