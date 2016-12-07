@@ -2,7 +2,7 @@
 Error: Undefined variable: "$path-img".
         on line 4 of ./css/styles.scss
 
-1: @import url('https://fonts.googleapis.com/css?family=Molle:400i');
+1: @import url('https://fonts.googleapis.com/css?family=Molle:400i|Unica+One');
 2: 
 3: body {
 4:   background-image: url('#{$path-img}/hair.png');
@@ -74,4 +74,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$path-img\".\A         on line 4 of ./css/styles.scss\A \A 1: @import url('https://fonts.googleapis.com/css?family=Molle:400i');\A 2: \A 3: body {\A 4:   background-image: url('#{$path-img}/hair.png');\A 5: }\A 6: \A 7: img {\A 8:   width: auto;\A 9:   max-width: 100%;"; }
+  content: "Error: Undefined variable: \"$path-img\".\A         on line 4 of ./css/styles.scss\A \A 1: @import url('https://fonts.googleapis.com/css?family=Molle:400i|Unica+One');\A 2: \A 3: body {\A 4:   background-image: url('#{$path-img}/hair.png');\A 5: }\A 6: \A 7: img {\A 8:   width: auto;\A 9:   max-width: 100%;"; }

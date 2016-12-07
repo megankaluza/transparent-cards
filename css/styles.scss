@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Molle:400i');
+@import url('https://fonts.googleapis.com/css?family=Molle:400i|Unica+One');
 
 body {
   background-image: url('#{$path-img}/hair.png');
@@ -23,6 +23,12 @@ h2 {
 
 div {
   @extend %position;
+}
+
+p {
+  @extend %centered;
+  font-family: $stack-unica;
+  padding: 1em;
 }
 
 .cardOne {
@@ -61,6 +67,13 @@ div {
   }
 }
 
+.cardInfo {
+  @extend %columns;
+  &::after {
+    @extend %after;
+  }
+}
+
 .column {
   float: left;
   padding: 3em;
@@ -69,6 +82,7 @@ div {
 }
 
 .text {
+  display: block;
   background-color: hue($discoball, 60%);
   position: relative;
   top: 5px;
@@ -93,16 +107,16 @@ div {
   @include clearfix;
 }
 
-@media only screen and (min-width: 480px) {
-  .wrapper {
-    width: 100%;
-    max-width: 90em;
-    }
+// Media Queries
 
-  .column {
-      width: 25%;
-    }
+@media only screen and (max-width: 1270px) {
+  button{
+    display: none;
+  }
 
+  .text {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 490px) {
@@ -114,7 +128,26 @@ div {
     margin-top: 0;
   }
 
+  button {
+    display: block;
+  }
+
+  .text {
+    display: block;
+  }
+
   footer {
     margin: 0;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .wrapper {
+    width: 100%;
+    max-width: 90em;
+  }
+
+  .column {
+    width: 25%;
   }
 }
