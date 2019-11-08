@@ -40,7 +40,7 @@ button:hover, .text:hover {
   opacity: .5; }
 
 footer {
-  margin-top: 20em;
+  margin-top: 3.5em;
   font-family: "Molle", cursive; }
 
 header {
@@ -114,7 +114,7 @@ p {
   border-radius: 90%; }
 
 .row {
-  margin-top: 15em; }
+  margin-top: 3.5em; }
 
 .wrapper {
   max-width: 85%;
