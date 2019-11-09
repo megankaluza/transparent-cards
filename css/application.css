@@ -104,6 +104,10 @@ p {
   width: 100%;
   min-height: 100px; }
 
+.info {
+  display: block;
+  width: 250px; }
+
 .text {
   display: block;
   background-color: #abe9ff;

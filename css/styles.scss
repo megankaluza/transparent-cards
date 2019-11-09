@@ -81,6 +81,11 @@ p {
   min-height: 100px;
 }
 
+.info {
+  display: block;
+  width: 250px;
+}
+
 .text {
   display: block;
   background-color: hue($discoball, 60%);
